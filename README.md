@@ -1,6 +1,6 @@
 # RemotePi
 
-This projects aims to create a remotely operated weather station, which when possible, should be roughly analogous to a space satellite.  
+This projects aims to create a remotely operated weather station, which when possible, should follow the design principals of a space satellite.  
 
 The core of the station is a Raspberry Pi. 
 
