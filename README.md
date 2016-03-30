@@ -19,3 +19,9 @@ The core of the station is a Raspberry Pi.
 	*A picture is captured with the Pi camera, which is also transmitted.
 	*When it's operations are complete, the Pi shuts down to conserve battery.
 	*The Arduino arms the RTC, so it can wake the Pi for it's next scheduled transmission.
+
+The electronics will be housed in a weatherproof housing, with sealed openings to allow for the camera, sensors, antenna, solar panel cord to pass through the enclosure.
+The whole station will be mounted on the roof of a building in a rural area several miles north of town.
+
+It should be possible to telnet into the Pi during it awake cycle.  Considerations will need to be made so that the Pi does not get powered down by the Sleepy Pi while a terminal session is in progress.
+This could be metered through a communications channel that allows the Pi to tell the Sleepy to delay power management for a period, or a DTMF decoder attached between the radio and the Arduino that allows to the Arduino to suspend power savings after hearing a specific tone sequence.
