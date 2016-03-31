@@ -1,4 +1,8 @@
-- name: install common packages
-    action: apt pkg={{item}} state=installed
-    with_items:
-    - git
+- name: Install required list of packages
+  apt: name={{item}} state=installed
+  with_items:
+       - git
+       - ax25-tools
+       - ax25-apps
+       - vim
+
